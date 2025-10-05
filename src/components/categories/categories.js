@@ -68,14 +68,14 @@ const CategoryPage = ({ path }) => {
     "bg-orange-400",
   ];
   const categoryIcons = [
-    <FaCar />,
-    <FaHeart />,
-    <GiLovers />,
-    <FaHome />,
-    <FaUsers />,
-    <FaShoppingCart />,
-    <IoIosBriefcase />,
-    <RiCustomerService2Line />,
+    FaCar,
+    FaHeart,
+    GiLovers,
+    FaHome,
+    FaUsers,
+    FaShoppingCart,
+    IoIosBriefcase,
+    RiCustomerService2Line,
   ];
 
   return (

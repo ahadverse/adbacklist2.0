@@ -38,74 +38,74 @@ const Terms = () => {
         <p>
           Without limitation, you agree to refrain from the following actions
           while using the Site:
-        </p>{" "}
+        </p>
         <br />
         <p>
           1. Harassing, threatening, embarrassing or causing distress or
           discomfort upon another individual or entity or impersonating any
           person or entity or otherwise restricting or inhibiting any other
           person from using or enjoying the Site;
-        </p>{" "}
+        </p>
         <br />
         <p>
           2. Transmitting any information, data, text, files, hyperlinks,
           software, chats, communication or other materials which is unlawful,
           false, misleading, dangerous, threatening, abusive, invasive of a
-          person's privacy, harassing, defamatory, vulgar, disgusting, hateful
-          or racially or otherwise objectionable, including without limitation
-          material of Any Type or nature that encourages conduct that may
-          constitute a criminal offense, give rise to civil liability or
+          person&apos;s privacy, harassing, defamatory, vulgar, disgusting,
+          hateful or racially or otherwise objectionable, including without
+          limitation material of Any Type or nature that encourages conduct that
+          may constitute a criminal offense, give rise to civil liability or
           otherwise violate any applicable local, state, provincial, national,
           or international law or regulation, or promote the Usage of controlled
           materials;
-        </p>{" "}
+        </p>
         <br />
         <p>
           3. Posting advertising or solicitation in categories Which Is Not
           right, or posting the Identical thing or agency at more than 1
           category or greater than once every 7 days, or posting the same
           advertisement in a Number of cities around the Website;
-        </p>{" "}
+        </p>
         <br />
         <p>
           4. Posting adult content or explicit adult material and some other
           content country to this law which applies.
-        </p>{" "}
+        </p>
         <br />
         <p>
           5. Composing, anyplace around the Site, obscene or lewd and lascivious
           graphics or photos which portray genitalia or actual or simulated
           sexual acts, or some other act which suggest or promote sexual acts or
           solicits sensual favor.
-        </p>{" "}
+        </p>
         <br />
         <p>
-          6. Putting up any solicitation straight or at"coded" fashion for
-          Absolutely Any illegal service exchanging sexual favors for money or
-          other valuable consideration;
-        </p>{" "}
+          6. Putting up any solicitation straight or at&apos;coded&apos; fashion
+          for Absolutely Any illegal service exchanging sexual favors for money
+          or other valuable consideration;
+        </p>
         <br />
         <p>
           7. Putting up any substance on the Website that exploits minors in any
           way;
-        </p>{" "}
+        </p>
         <br />
         <p>
           8. publishing any substance on the Site that in any way constitutes or
           aids in human trafficking.
-        </p>{" "}
+        </p>
         <br />
         <p>
           9. Posting any ad for products or services, use or sale of which can
           be illegal by any legislation or law;
-        </p>{" "}
+        </p>
         <br />
         <p>
           10. Supplying mail, e-mail, voice messages or faxes for solicitation
           of any other Item, or support to a user of the Website unless the
           consumer has given permission in their advertising or otherwise
           allowed contact for solicitation;
-        </p>{" "}
+        </p>
         <br />
         <p>
           11. Using any automated device, robot, spider, crawler, information
@@ -196,15 +196,15 @@ const Terms = () => {
         amended, prohibits discrimination in the sale, rental, and financing of
         dwellings, and at additional housing-related trades. The Site is not
         going to knowingly accept any real estate advertising which is in
-        violation of any pertinent law. You acknowledge and agree you won't
+        violation of any pertinent law. You acknowledge and agree you won&apos;t
         submit or post any advertising which discriminates based on race, color,
         national origin, religion, sex, sexual orientation, familial status or
         handicap/disability. If you see any posting or ad that discriminates
         based on any of the above things, you are invited, along with calling
-        HUD, to report this ad or posting by clicking on the"Report this Ad"
-        hyperlink located on your own advertising website. You know we shall
-        possess the right, however maybe not the responsibility, to remove, edit
-        or edit any advert.
+        HUD, to report this ad or posting by clicking on the&apos;Report this
+        Ad&apos; hyperlink located on your own advertising website. You know we
+        shall possess the right, however maybe not the responsibility, to
+        remove, edit or edit any advert.
         <br />
         <br />
         <b>Termination of Access:</b> <br />
@@ -222,7 +222,7 @@ const Terms = () => {
         information. Notification of Infringement In case you believe that your
         work Was replicated in a way that constitutes copyright infringement, or
         your intellectual property rights have been otherwise violated, please
-        supply the Subsequent advice to this Site's Copyright Agent: 1. A
+        supply the Subsequent advice to this Site&apos;s Copyright Agent: 1. A
         digital or physical signature of the person authorized to act for
         Whoever Owns the copyright or other intellectual property interest; 2. A
         description of the copyrighted work or other intellectual property which
@@ -231,12 +231,12 @@ const Terms = () => {
         address, telephone and email Tackle; 5. An announcement by you, made
         under penalty of perjury, which the data provided on your Notice is
         accurate and that you are the copyright or intellectual property owner
-        or authorized to act on the copyright or intellectual property owner's
-        behalf. 6. Our copyright representative can be attained as follows: 7.
-        Email: misuse@Ad Back List.com (Remember to put Copyright Infringement
-        in the subject line) The Site may, under suitable circumstances and in
-        our discretion, disable or terminate the accounts of consumers who could
-        be repeat infringers.
+        or authorized to act on the copyright or intellectual property
+        owner&apos;s behalf. 6. Our copyright representative can be attained as
+        follows: 7. Email: misuse@Ad Back List.com (Remember to put Copyright
+        Infringement in the subject line) The Site may, under suitable
+        circumstances and in our discretion, disable or terminate the accounts
+        of consumers who could be repeat infringers.
         <br />
         <br />
         <b>Privacy Policy:</b>
@@ -255,13 +255,13 @@ const Terms = () => {
         acknowledge that the Site may mail you email messages informing you
         concerning services and products offered by the Site (or its affiliates
         and spouses ) You understand and consent that these kinds of
-        communications really are part and parcel of one's enrollment for and
-        use of this Website; if you do not want to receive further
+        communications really are part and parcel of one&apos;s enrollment for
+        and use of this Website; if you do not want to receive further
         communications by the Site (or its associates and partners), you need to
         terminate your registration by sending a cancellation note to get hold
         of (@)Ad Back List.com. In the event you opt to get mobile alarms
         regarding any advertisement, you consent we may send automated texting
-        into your cell telephone. If you don't want to receive such text
+        into your cell telephone. If you don&apos;t want to receive such text
         messages, you ought not accept the mobile notifications choice. We will
         not mail you any marketing or advertisements by text messages. Message
         and data rates can submit an application for notifications.
@@ -279,11 +279,11 @@ const Terms = () => {
         <br />
         <b>Links:</b>
         <br />
-        The Website doesn't have any control over and isn't accountable for the
-        content of or claims made on internet sites that may be associated with
-        from the Site, whether or not they may be connected with the Site. Any
-        websites linked to from the Website are for your convenience only, and
-        you get them at your own risk.
+        The Website doesn&apos;t have any control over and isn&apos;t
+        accountable for the content of or claims made on internet sites that may
+        be associated with from the Site, whether or not they may be connected
+        with the Site. Any websites linked to from the Website are for your
+        convenience only, and you get them at your own risk.
         <br />
         <br />
         <b>Release:</b>
@@ -296,30 +296,31 @@ const Terms = () => {
         persons posting the information. Any consumer who violates the
         conditions may be permanently banned from posting ads or utilizing the
         Site. You know that all postings, messages, ads, ads, images, sounds,
-        graphics, text, documents, video or other materials (together"Content")
-        posted on, transmitted through, or linked from the website, are solely
-        the duty of the person from whom such Content originated. Now you
-        understand that the Site does not control, and isn't responsible for
-        Content which can be found on the Site. You agree that the Site does not
-        pre-screen, track or approve any information, but that the Site will
-        have the right, however, not the responsibility to remove, move (which
-        includes going an ad or submitting to another section or group within
-        the classifieds), refuse, edit or delete any Content for any reason
-        whatsoever. The website will not be responsible for practically any
-        interaction between you and one other of the website. Your dealings with
-        others throughout the Site are solely between you and this other
-        celebration. On no account will the Site be liable for any products,
-        services, resources or content available through such third party
-        dealings or communications, or for any injury related thereto. The Site
-        is under no obligation to eventually become involved with any disputes
-        between you and other customers of the Site or between you and some
-        other third parties. You agree our assistance is still a venue for
-        posters and customers of the Site. At the event that you own a dispute
-        with any user of the Site, you consent that your website is under no
-        obligation to become included. You agree to publish the Site from all
-        claims, demands, and obligations arising from or in connection with this
-        kind of challenge. You are totally responsible and accountable for any
-        ad content you post or any ad that's posted through your Account.
+        graphics, text, documents, video or other materials
+        (together&apos;Content&apos;) posted on, transmitted through, or linked
+        from the website, are solely the duty of the person from whom such
+        Content originated. Now you understand that the Site does not control,
+        and isn&apos;t responsible for Content which can be found on the Site.
+        You agree that the Site does not pre-screen, track or approve any
+        information, but that the Site will have the right, however, not the
+        responsibility to remove, move (which includes going an ad or submitting
+        to another section or group within the classifieds), refuse, edit or
+        delete any Content for any reason whatsoever. The website will not be
+        responsible for practically any interaction between you and one other of
+        the website. Your dealings with others throughout the Site are solely
+        between you and this other celebration. On no account will the Site be
+        liable for any products, services, resources or content available
+        through such third party dealings or communications, or for any injury
+        related thereto. The Site is under no obligation to eventually become
+        involved with any disputes between you and other customers of the Site
+        or between you and some other third parties. You agree our assistance is
+        still a venue for posters and customers of the Site. At the event that
+        you own a dispute with any user of the Site, you consent that your
+        website is under no obligation to become included. You agree to publish
+        the Site from all claims, demands, and obligations arising from or in
+        connection with this kind of challenge. You are totally responsible and
+        accountable for any ad content you post or any ad that&apos;s posted
+        through your Account.
         <br />
         We usually do not issue refunds or credits as a result of our
         exceptionally reduced prices and minimal administrative personnel. You
@@ -352,15 +353,16 @@ const Terms = () => {
           USE OF THIS SITE IS AT YOUR OWN RISK. THE SITE IS NOT RESPONSIBLE FOR
           ANY CONTENT FOUND ON THESE CLASSIFIEDS. EXPRESSLY, THE SITE DISCLAIMS
           ANY WARRANTIES, EXPRESSED OR IMPLIED. The SITE DOES NOT WARRANT THAT
-          THE SITE'S CLASSIFIEDS AND USE OF THE SITE WILL BE UNINTERRUPTED OR
-          TIMELY, SECURE OR WITHOUT DEFECTS OR ERRORS. THE SITE IS PROVIDED ON
-          AN "AS IS" AND "AS AVAILABLE" BASIS. YOU ACKNOWLEDGE AND AGREE THAT
-          ANY MATERIAL AND DATA DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE
-          OF THIS WEBSITE IS DONE AT YOUR DISCRETION AND RISK AND THAT YOU WILL
-          BE SOLELY RESPONSIBLE FOR ANY DAMAGES TO YOUR COMPUTER SYSTEM OR LOSS
-          OF DATA THAT RESULTS FROM THE DOWNLOAD OF SUCH MATERIAL AND DATA. SOME
-          JURISDICTIONS DO ALLOW THE EXCLUSION OF CERTAIN WARRANTIES. SO SOME OF
-          THE EXCLUSIONS MAY NOT BE APPLICABLE TO YOU.
+          THE SITE&apos;S CLASSIFIEDS AND USE OF THE SITE WILL BE UNINTERRUPTED
+          OR TIMELY, SECURE OR WITHOUT DEFECTS OR ERRORS. THE SITE IS PROVIDED
+          ON AN &apos;AS IS&apos; AND &apos;AS AVAILABLE&apos; BASIS. YOU
+          ACKNOWLEDGE AND AGREE THAT ANY MATERIAL AND DATA DOWNLOADED OR
+          OTHERWISE OBTAINED THROUGH THE USE OF THIS WEBSITE IS DONE AT YOUR
+          DISCRETION AND RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR ANY
+          DAMAGES TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE
+          DOWNLOAD OF SUCH MATERIAL AND DATA. SOME JURISDICTIONS DO ALLOW THE
+          EXCLUSION OF CERTAIN WARRANTIES. SO SOME OF THE EXCLUSIONS MAY NOT BE
+          APPLICABLE TO YOU.
           <br />
           <br />
           <strong>Limitation of Obligation:</strong>
@@ -369,18 +371,19 @@ const Terms = () => {
           The advice services available for your requirements on this Site could
           contain errors and are susceptible to periods of interruption. While
           the Site does its very best to keep up the information, goods and
-          services it offers on the Site, it can't be held accountable for any
-          errors, defects, lost profits or other consequential damages
+          services it offers on the Site, it can&apos;t be held accountable for
+          any errors, defects, lost profits or other consequential damages
           originating from the use of the website. By applying the site, you
           agree to defend, indemnify and hold harmless the indemnified parties
           from all liability regarding your use of the website or participation
-          in any site's activities. if you're dissatisfied with the website, or
-          any portion thereof, or do not agree with these terms, your only
-          recourse and exclusive remedy shall be to stop employing the site.
+          in any site&apos;s activities. if you&apos;re dissatisfied with the
+          website, or any portion thereof, or do not agree with these terms,
+          your only recourse and exclusive remedy shall be to stop employing the
+          site.
           <br />
           You agree to indemnify and hold harmless the Indemnified Parties from
-          any claim or demand, including reasonable lawyers' fees, made by any
-          third party due to or arising out of your usage of the Site, the
+          any claim or demand, including reasonable lawyers&apos; fees, made by
+          any third party due to or arising out of your usage of the Site, the
           violation of these conditions by you, or the breach by you, or other
           users of the Website using your personal computer, of any intellectual
           property or any other right of any individual or entity. The Site
@@ -405,9 +408,9 @@ const Terms = () => {
           stipulations which may apply when you use affiliate solutions ,
           third-party content or third-party applications, or see another
           website linked to by this Site. The section titles in these Terms are
-          for convenience only and don't have any legal or contractual effect.
-          Please report any violations of the Requirements to: misuse@Ad Back
-          List.com
+          for convenience only and don&apos;t have any legal or contractual
+          effect. Please report any violations of the Requirements to: misuse@Ad
+          Back List.com
           <br />
           <br />
           <strong>Severance and Waiver:</strong>
@@ -416,20 +419,20 @@ const Terms = () => {
           be unlawful, void, or for any reason unenforceable, then that
           provision will be deemed severable from these types of Conditions and
           shall not influence the validity and enforceability of any remaining
-          provisions. What's more, if any provision of these Terms is found by a
-          court of competent authority to be invalid, the parties nevertheless
-          agree that the court should endeavor to give effect to the parties'
-          intentions as reflected in the provision. The Site's failure to
-          exercise or enforce any right or provision of these Conditions won't
-          constitute a waiver of such right or provision unless acknowledged and
-          agreed to from the website."
+          provisions. What&apos;s more, if any provision of these Terms is found
+          by a court of competent authority to be invalid, the parties
+          nevertheless agree that the court should endeavor to give effect to
+          the parties&apos; intentions as reflected in the provision. The
+          Site&apos;s failure to exercise or enforce any right or provision of
+          these Conditions won&apos;t constitute a waiver of such right or
+          provision unless acknowledged and agreed to from the website.&apos;
           <br />
-          Ad Back List.com can be a web site (the “Site") that hosts categorized
-          advertisements and relevant articles created and manufactured with
-          third party users. Your use of the website, for example most of
-          access, features or services, is governed with these Conditions of Use
-          and the Privacy By using the Site in any way, you are agreeing to
-          conform to these Conditions
+          Ad Back List.com can be a web site (the “Site&apos;) that hosts
+          categorized advertisements and relevant articles created and
+          manufactured with third party users. Your use of the website, for
+          example most of access, features or services, is governed with these
+          Conditions of Use and the Privacy By using the Site in any way, you
+          are agreeing to conform to these Conditions
         </p>
       </div>
       <Footer />

@@ -32,15 +32,15 @@ const PrivacyPolicy = () => {
         <hr />
 
         <p className='mt-2'>
-          We'd like to inform you that Ad Back List will not accept any fraud or
-          scams and much more. Ad Back List is a place open for all anyone is
-          welcome to post any information here. However, we have a particular
-          rule to protect our customers and everyone else. It is not allowed to
-          use scams on Ad Back List. If anyone uploads any photos and there is a
-          complaint regarding the photo or other personal concerns, We will
-          remove the image and take it down. Ad Back List will always be your
-          legal protection. You can use Ad Back List however you like and worry
-          about privacy!
+          We&apos;d like to inform you that Ad Back List will not accept any
+          fraud or scams and much more. Ad Back List is a place open for all
+          anyone is welcome to post any information here. However, we have a
+          particular rule to protect our customers and everyone else. It is not
+          allowed to use scams on Ad Back List. If anyone uploads any photos and
+          there is a complaint regarding the photo or other personal concerns,
+          We will remove the image and take it down. Ad Back List will always be
+          your legal protection. You can use Ad Back List however you like and
+          worry about privacy!
         </p>
         <br />
         <br />
@@ -53,8 +53,8 @@ const PrivacyPolicy = () => {
           When you access, use the article, write an article, answer or browse
           the Site by using the Site, you acknowledge your acceptance of the
           current online privacy policy. If you disagree with the Privacy Policy
-          If you don't, then you're not authorized to use the Site and should
-          end your use of the Site immediately.
+          If you don&apos;t, then you&apos;re not authorized to use the Site and
+          should end your use of the Site immediately.
         </p>
         <br />
         <br />
@@ -100,7 +100,10 @@ const PrivacyPolicy = () => {
           Monitor and oversee the usage of the website, For example, articles,
           answers, or accounting advice.
         </li>
-        <li> Implement the Terms of Use (together with the"Tasks").</li>
+        <li>
+          {" "}
+          Implement the Terms of Use (together with the&quot;Tasks&quot;).
+        </li>
         <br />
         <p>
           You have given the website permission to send emails for users to

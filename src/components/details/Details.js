@@ -63,7 +63,7 @@ const Details = ({ data, paths, rainbow, page }) => {
           If ad poster asks for money, credit card info, cashapp, gift card or
           tell you to verify in another website, consider its a SCAM !
           <br />
-          Don't pay anything before meet the Provider!
+          Don&apos;t pay anything before meet the Provider!
         </p>
       </div>
       <div className='bg-blue-200 mt-2 text-center py-2 mb-10  w-full m-auto sm:w-3/5 sm:text-base text-xs '>
