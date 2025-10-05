@@ -1,0 +1,50 @@
+.desc h1 {
+    color: black;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.desc h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.desc h3 {
+    color: black;
+    font-size: 1.17em;
+    font-weight: bolder;
+}
+
+.desc h4 {
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.desc h5 {
+    color: black;
+    font-size: 0.83em;
+    font-weight: bolder;
+}
+
+.desc h6 {
+    color: black;
+    font-size: 0.67em;
+    font-weight: bolder;
+}
+
+.desc a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.desc p {
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.desc {
+    color: black;
+    margin: 3%;
+}

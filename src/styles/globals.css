@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.m-54c44539 {
+  overflow-y: hidden !important;
+  overflow-x: hidden;
+}
+
+.m-5df29311 {
+  padding: 0 !important;
+}
+
+.m-326d024a:where([data-active]) {
+  background-color: #c3125b !important;
+  border: #c3125b !important;
+}
+
+.m-1b7284a3,
+.m-b5489c3c {
+  background-color: transparent !important;
+}
+
+.m-606cb269 {
+  background: #c3125b;
+  color: white;
+  font-weight: 900;
+}
+
+.m-606cb269:hover {
+  background: #c3125b !important;
+  color: white;
+  font-weight: 900;
+}
+
+.mantine-Modal-close svg {
+  background: #c3125b !important;
+  color: white !important;
+}
+.radio:checked,
+.radio[aria-checked="true"] {
+  box-shadow: none !important;
+}
+
+[type="radio"].radio-xs {
+  border: 2px solid #a50d4d;
+}
+input:focus {
+  background-color: rgb(238, 238, 238);
+}
