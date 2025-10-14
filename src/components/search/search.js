@@ -44,7 +44,9 @@ const Search = () => {
           <div className='w-full mt-5 block m-auto text-decoration-none  text-pink-800 hover:underline'>
             {keyword?.map((a) => (
               <li key={a._id} className='list-none'>
-                <Link href={`/categories/${a?.name}`}>{a?.name}</Link>
+                <Link href={`/categories/${a?.name?.toLowerCase()}`}>
+                  {a?.name}
+                </Link>
               </li>
             ))}
           </div>

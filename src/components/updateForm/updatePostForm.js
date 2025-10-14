@@ -192,7 +192,7 @@ const UpdatePostForm = ({ post }) => {
 
   // current new total
   const newTotal = Number((local + premiumCost).toFixed(2));
-  const delta = Number((newTotal - prevTotal).toFixed(2)); // positive => charge, negative => refund
+  const delta = Number((newTotal - prevTotal).toFixed(2));
 
   const handleSubmit = async () => {
     setLoading(true);
@@ -224,14 +224,12 @@ const UpdatePostForm = ({ post }) => {
       data.images = existingImages;
     }
 
-    // validation
     if (!data.name || !data.category || !data.subCategory || !data.email) {
       toast.error("Please fill the required fields");
       setLoading(false);
       return;
     }
 
-    // If user needs to pay extra, ensure they have enough credit
     if (delta > 0 && Number(users?.credit || 0) < delta) {
       toast.error(`Insufficient credits. You need $${delta.toFixed(2)} more.`);
       setLoading(false);
@@ -272,24 +270,24 @@ const UpdatePostForm = ({ post }) => {
           setUser({ ...users, credit: newCredit });
         }
       }
-
+      toast.success("Post updated successfully");
       // clear selected cities stored in localStorage (if selection flow used)
       localStorage.removeItem("cities");
-
-      Swal.fire({
-        position: "top-center",
-        icon: "success",
-        title:
-          delta > 0
-            ? `Updated and charged $${delta.toFixed(2)}`
-            : delta < 0
-            ? `Updated and refunded $${Math.abs(delta).toFixed(2)}`
-            : "Post updated successfully",
-        showConfirmButton: false,
-        timer: 2500,
-      }).then(() => {
-        router.push("/dashboard/posts");
-      });
+      router.push("/dashboard/posts");
+      // Swal.fire({
+      //   position: "top-center",
+      //   icon: "success",
+      //   title:
+      //     delta > 0
+      //       ? `Updated and charged $${delta.toFixed(2)}`
+      //       : delta < 0
+      //       ? `Updated and refunded $${Math.abs(delta).toFixed(2)}`
+      //       : "Post updated successfully",
+      //   showConfirmButton: false,
+      //   timer: 2500,
+      // }).then(() => {
+      //   router.push("/dashboard/posts");
+      // });
     } catch (err) {
       console.error(err);
       toast.error("Something went wrong!");
@@ -297,7 +295,7 @@ const UpdatePostForm = ({ post }) => {
       setLoading(false);
     }
   };
-
+  console.log(delta);
   return (
     <Paper
       radius='md'

@@ -121,7 +121,7 @@ const CategoryPage = ({ path }) => {
                     </span>
                     <Link
                       className='hover:bg-red-600 rounded-full p-1'
-                      href={`/posts/${category.slug}?city=${path?.city}`}
+                      href={`/category/${category.slug}?city=${path?.city}`}
                     >
                       <IoIosArrowForward />
                     </Link>

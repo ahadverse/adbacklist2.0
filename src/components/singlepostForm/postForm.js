@@ -269,7 +269,7 @@ const SinglePostForm = () => {
         <TextInput
           label='Phone'
           placeholder='Enter your phone'
-          value={state.age}
+          value={state.phone}
           onChange={(e) => handleInput("phone", e.currentTarget.value)}
         />
 

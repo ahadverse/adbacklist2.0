@@ -21,7 +21,7 @@ const CategoryPage = () => {
 
         <meta name='title' content={router.query.city} />
         <meta name='keywords' content='' />
-        <meta name='site_name' content='' />
+
         <meta
           name='description'
           content={`${router.query?.city
@@ -36,6 +36,9 @@ const CategoryPage = () => {
           rel='canonical'
           href={`https://adbacklist.com${router?.asPath}`}
         />
+        <meta name='site_name' content='Adbacklist' />
+        <meta name='publisher' content='Adbacklist' />
+        <meta name='robots' content='index, follow' />
       </Head>
       <Layout>
         <Categories path={router.query} />

@@ -47,6 +47,13 @@ const PostDetail = () => {
 
   const formattedPhoneNumber = formatUSPhoneNumber(postDetails?.phone);
 
+  const stripHtml = (html) => {
+    if (!html) return "";
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = html;
+    return tempDiv.textContent || tempDiv.innerText || "";
+  };
+
   return (
     <div>
       <Head>
@@ -54,17 +61,19 @@ const PostDetail = () => {
         <meta name='title' content={postDetails?.name?.slice(0, 64)} />
         <meta name='keywords' content='' />
         <meta name='site_name' content='Bed Page' />
+
         <meta
           name='description'
-          content={`${
-            formattedPhoneNumber ? `${formattedPhoneNumber}.` : ""
-          }  ${postDetails?.name?.slice(0, 155)}. `}
+          content={stripHtml(postDetails?.description).slice(0, 155)}
         />
         <link
           name='canonical'
           rel='canonical'
           href={`https://adbacklist.com${router?.asPath}`}
         />
+        <meta name='site_name' content='Adbacklist' />
+        <meta name='publisher' content='Adbacklist' />
+        <meta name='robots' content='index, follow' />
       </Head>
       <Layout>
         <div className='bg-white  p-5 sm:w-[1200px] m-auto'>
