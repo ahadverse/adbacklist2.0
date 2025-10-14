@@ -20,7 +20,6 @@ const ImageContainer = ({ data }) => {
         ))}
       </div>
 
-      {/* Fullscreen Lightbox */}
       {index >= 0 && (
         <Lightbox
           open={index >= 0}
