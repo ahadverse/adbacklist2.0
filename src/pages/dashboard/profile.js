@@ -18,7 +18,7 @@ const Dashboards = () => {
             {loading ? (
               <ImSpinner10 className='animate-spin text-6xl text-pink-800 text-center m-auto' />
             ) : (
-              <div className='flex items-center sm:flex-row flex-col gap-10 m-auto sm:w-[500px]'>
+              <div className='flex items-center sm:flex-row flex-col gap-10 m-auto sm:w-[560px]'>
                 <div>
                   <img className='w-[150px]' src={users.avater} />
                   <h1 className='text-center text-xl'>
@@ -28,26 +28,26 @@ const Dashboards = () => {
                     </span>
                   </h1>
                 </div>
-                <div className='flex flex-col justify-start items-start gap-4 text-xl'>
-                  <h1 className='text-center'>
+                <div className='flex flex-col justify-center sm:justify-start items-start gap-4 sm:text-xl px-5'>
+                  <h1 className=''>
                     First Name :{" "}
                     <span className='text-pink-700 font-bold capitalize'>
                       {users?.firstName}
                     </span>
                   </h1>
-                  <h1 className='text-center'>
+                  <h1 className=''>
                     Last Name :{" "}
                     <span className='text-pink-700 font-bold capitalize'>
                       {users?.lastName}
                     </span>
                   </h1>
-                  <h1 className='text-center'>
+                  <h1 className=''>
                     Email :{" "}
                     <span className='text-pink-700 font-bold'>
                       {users?.email}
                     </span>
                   </h1>
-                  <h1 className='text-center'>
+                  <h1 className=''>
                     Joined :{" "}
                     <span className='text-pink-700 font-bold capitalize'>
                       {new Date(users?.createdAt).toDateString()}

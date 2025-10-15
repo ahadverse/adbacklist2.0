@@ -53,6 +53,15 @@ const initialState = {
   images: [],
 };
 
+const modules = {
+  toolbar: [
+    [{ header: [1, 2, 4, false] }],
+    ["bold", "italic", "underline", "strike"],
+    [{ list: "ordered" }, { list: "bullet" }],
+    ["clean"],
+  ],
+};
+
 const SinglePostForm = () => {
   const router = useRouter();
   const { users, setUser } = useMyContext();
@@ -316,6 +325,7 @@ const SinglePostForm = () => {
           </Text>
           <ReactQuill
             theme='snow'
+            modules={modules}
             value={state.description}
             className='h-[200px] sm:mb-10 mb-16'
             onChange={(value) => handleInput("description", value)}

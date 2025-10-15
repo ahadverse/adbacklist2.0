@@ -14,8 +14,8 @@ const DashboardNav = () => {
             href={"/dashboard/profile"}
             className={` ${
               router?.asPath == "/dashboard/profile"
-                ? "text-pink-700 hover:text-blue-400 hover:underline font-bold"
-                : "hover:text-blue-400 hover:underline"
+                ? "text-pink-700 hover:text-blue-400 hover:underline font-bold  mt-1"
+                : "hover:text-blue-400 hover:underline  mt-1"
             }`}
           >
             My Profile
@@ -24,8 +24,8 @@ const DashboardNav = () => {
             href={"/dashboard/posts"}
             className={` ${
               router?.asPath == "/dashboard/posts"
-                ? "text-pink-700 hover:text-blue-400 hover:underline  font-bold"
-                : "hover:text-blue-400 hover:underline"
+                ? "text-pink-700 hover:text-blue-400 hover:underline  font-bold  mt-1"
+                : "hover:text-blue-400 hover:underline  mt-1"
             }`}
           >
             My Posts
@@ -34,19 +34,27 @@ const DashboardNav = () => {
             href={"/dashboard/recharge"}
             className={` ${
               router?.asPath == "/dashboard/recharge"
-                ? "text-pink-700 hover:text-blue-400 hover:underline  font-bold"
-                : "hover:text-blue-400 hover:underline"
+                ? "text-pink-700 hover:text-blue-400 hover:underline  font-bold  mt-1"
+                : "hover:text-blue-400 hover:underline mt-1"
             }`}
           >
             My Recharges
           </Link>
         </span>
-        <Link
-          className='text-sm sm:text-xl text-center sm:text-start p-1 bg-red-600 font-bold text-white'
-          href={`/recharge-credits`}
-        >
-          Buy Credit
-        </Link>
+        <div className='flex gap-x-5'>
+          <Link
+            className='text-sm sm:text-xl text-center sm:text-start p-1 px-4 bg-green-600 font-bold text-white'
+            href={"/add-post"}
+          >
+            Post Now
+          </Link>
+          <Link
+            className='text-sm sm:text-xl text-center sm:text-start px-4 p-1 bg-red-600 font-bold text-white'
+            href={`/recharge-credits`}
+          >
+            Buy Credit
+          </Link>
+        </div>
       </div>
     </div>
   );
