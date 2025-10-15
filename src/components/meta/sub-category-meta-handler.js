@@ -18,13 +18,13 @@ const subCategoryMeta = (city, subCategory) => {
 
   return {
     adult: {
-      title: `Adult Jobs | skip the games alternative in ${prefix}   – Adbacklist`,
+      title: `${formattedsubCategory}  | skip the games alternative in ${prefix}   – Adbacklist`,
       description: `Create ${formattedsubCategory}     in ${prefix}  . post or browse skip the games alternative ads for free escort & free personal ads on Adbacklist | craigslist alternative`,
       keywords: ``,
     },
 
     dating: {
-      title: `Adult Jobs | skip the games alternative in ${prefix}   – Adbacklist`,
+      title: `${formattedsubCategory}  | skip the games alternative in ${prefix}   – Adbacklist`,
       description: `Create ${formattedsubCategory}     in ${prefix}  . post or browse skip the games alternative ads for free escort & free personal ads on Adbacklist | craigslist alternative`,
       keywords: ``,
     },

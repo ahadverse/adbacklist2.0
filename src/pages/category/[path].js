@@ -31,7 +31,7 @@ const Category = () => {
 
   const { path, city } = router.query;
 
-  const meta = categoryMeta(city)[path] || {};
+  const meta = categoryMeta(city, path)[path] || {};
 
   const formattedCity =
     router.query.city &&
