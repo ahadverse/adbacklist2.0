@@ -247,7 +247,8 @@ const UpdatePostForm = ({ post }) => {
 
     try {
       // update post
-      await fetch(
+      console.log(data);
+      const res = await fetch(
         `https://adbacklist-backend2-0-vb3d.vercel.app/api/posts/post/${post._id}`,
         {
           method: "PUT",
@@ -255,7 +256,7 @@ const UpdatePostForm = ({ post }) => {
           body: JSON.stringify(data),
         }
       );
-
+      console.log(res);
       // Handle credit adjustment only if user exists
       if (users && session?.user?.id) {
         let newCredit = Number(users.credit || 0);
@@ -280,23 +281,9 @@ const UpdatePostForm = ({ post }) => {
         }
       }
       toast.success("Post updated successfully");
-      // clear selected cities stored in localStorage (if selection flow used)
+
       localStorage.removeItem("cities");
       router.push("/dashboard/posts");
-      // Swal.fire({
-      //   position: "top-center",
-      //   icon: "success",
-      //   title:
-      //     delta > 0
-      //       ? `Updated and charged $${delta.toFixed(2)}`
-      //       : delta < 0
-      //       ? `Updated and refunded $${Math.abs(delta).toFixed(2)}`
-      //       : "Post updated successfully",
-      //   showConfirmButton: false,
-      //   timer: 2500,
-      // }).then(() => {
-      //   router.push("/dashboard/posts");
-      // });
     } catch (err) {
       console.error(err);
       toast.error("Something went wrong!");

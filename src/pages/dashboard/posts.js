@@ -16,21 +16,22 @@ const Dashboards = () => {
   const [category, setCategory] = useState("");
   const [sort, setSort] = useState("desc");
   const [posts, setPost] = useState([]);
-  const [current, setCurrent] = useState(1);
-  const [pages, setPages] = useState(1);
-  const [startIndex, setStartIndex] = useState(1);
+  const [pagination, setPagination] = useState({
+    page: 1,
+    limit: 10,
+    total: 0,
+  });
   const [reload, setReload] = useState(1);
 
   async function getPosts() {
-    const uri = `https://adbacklist-backend2-0-vb3d.vercel.app/api/posts/posterid/${session?.user?.id}?page=${current}&searchText=${searchText}&status=${status}&category=${category}&sort=${sort}`;
+    const uri = `https://adbacklist-backend2-0-vb3d.vercel.app/api/posts/posterid/${session?.user?.id}?page=${pagination?.page}&searchText=${searchText}&status=${status}&category=${category}&sort=${sort}`;
 
     try {
       const response = await axios.get(uri, {
         method: "GET",
       });
       setPost(response.data.data.posts);
-      setPages(response.data.pages);
-      setStartIndex(response?.data?.startIndex);
+      setPagination(response.data?.pagination);
       setLoading(false);
     } catch (error) {
       setLoading(false);
@@ -49,7 +50,7 @@ const Dashboards = () => {
       return;
     }
   }, [
-    current,
+    pagination?.page,
     category,
     status,
     searchText,
@@ -77,7 +78,6 @@ const Dashboards = () => {
             ) : (
               <PostsList
                 posts={posts}
-                startIndex={startIndex}
                 setCategory={setCategory}
                 setSearchText={setSearchText}
                 setStatus={setStatus}
@@ -91,8 +91,8 @@ const Dashboards = () => {
               />
             )}
             <Pagination
-              total={Math.ceil(pages / 10)}
-              value={current}
+              total={Math.ceil(pagination.total / pagination.limit)}
+              value={pagination?.page}
               onChange={setPage}
               mt='sm'
             />

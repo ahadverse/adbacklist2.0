@@ -5,7 +5,6 @@ import Swal from "sweetalert2";
 import axios from "axios";
 
 const PostsList = ({
-  startIndex,
   posts,
   setSearchText,
   setSort,
@@ -126,7 +125,7 @@ const PostsList = ({
           <tbody>
             {posts?.map((a, index) => (
               <tr key={index}>
-                <th>{startIndex + index}</th>
+                <th>{index + 1}</th>
                 <td>{a?.createdAt?.split("T")[0]}</td>
                 <td>{a.name.slice(0, 50)}</td>
                 <td className='text-center'>

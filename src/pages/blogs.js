@@ -12,23 +12,24 @@ const Blogs = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [catKey, setCatKey] = useState("");
   const [current, setCurrent] = useState(1);
-  const [pages, setPages] = useState(1);
-  const [total, setTotal] = useState(1);
   const [keyword, setKeyword] = useState("");
-
+  const [pagination, setPagination] = useState({
+    page: 1,
+    limit: 10,
+    total: 0,
+  });
   async function getBlogs() {
     try {
       const response = await axios.get(
         `https://adbacklist-backend2-0-vb3d.vercel.app/api/blogs?page=${current}&q=${keyword}&cat=${catKey}`
       );
       const data = response.data;
-      setBlogs(data?.data.blogs);
-      setPages(data.page);
-      setTotal(data.total);
+
+      setBlogs(data?.data);
+      setPagination(data?.pagination);
       setIsLoading(false);
     } catch (error) {
       setBlogs([]);
-      setPages(1);
       setIsLoading(false);
       console.error(error);
     }
@@ -59,7 +60,7 @@ const Blogs = () => {
             <h1 className='text-2xl font-bold'>
               Blogs{" "}
               <span className='text-sm font-semibold'>
-                (Showing {blogs?.length ?? 0} post of {total})
+                (Showing {blogs?.length ?? 0} post of {pagination?.total})
               </span>
             </h1>
             <div className='flex sm:flex-row flex-col justify-end items-end gap-2'>
@@ -111,8 +112,8 @@ const Blogs = () => {
           )}
           <br />
           <Pagination
-            total={Math.ceil(total / 7)}
-            value={current}
+            total={Math.ceil(pagination?.total / pagination.limit)}
+            value={pagination.page}
             onChange={setPage}
             mt='sm'
             className='flex justify-center'
