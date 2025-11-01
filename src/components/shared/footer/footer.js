@@ -77,13 +77,21 @@ const Footer = () => {
       <br />
       <br />
       <div className='flex justify-between items-center w-[200px] m-auto'>
-        <FaFacebook className='text-2xl text-blue-600' />
+        <Link href={"https://www.facebook.com/adbacklist"}>
+          <FaFacebook className='text-2xl text-blue-600' />
+        </Link>
         <div className='h-[20px] border border-gray-600'></div>
-        <FaInstagramSquare className='text-2xl text-purple-500' />
+        <Link href={"https://www.instagram.com/adbacklist"}>
+          <FaInstagramSquare className='text-2xl text-purple-500' />
+        </Link>
         <div className='h-[20px] border border-gray-600'></div>
-        <BsTwitterX className='text-2xl' />
+        <Link href={"https://x.com/Adbacklist"}>
+          <BsTwitterX className='text-2xl' />
+        </Link>
         <div className='h-[20px] border border-gray-600'></div>
-        <FaPinterest className='text-2xl text-red-600' />
+        <Link href={"https://www.pinterest.com/adbacklist"}>
+          <FaPinterest className='text-2xl text-red-600' />
+        </Link>
       </div>
       <br />
       <div className='bg-gray-200 py-5'>

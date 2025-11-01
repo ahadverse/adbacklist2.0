@@ -19,7 +19,7 @@ const categoryMeta = (city, category) => {
   return {
     adult: {
       title: `${prefix} Skip The Games Alternative – Adbacklist`,
-      description: `${prefix} craigslist alternative for free posting ads for Housing, for sale, vehicles, mega personal classifieds, create your local sales network on adbacklist.`,
+      description: `${prefix} Skip The Games alternative for free escort ads, free personal ads, mega personal classified, hookers for sale on adbacklist local sales network`,
       keywords: `skip the games alternative,
 free escort ads,
 free personal ads,
@@ -29,7 +29,7 @@ hookers for sale`,
 
     dating: {
       title: `${prefix} Skip The Games Alternative – Adbacklist`,
-      description: `${prefix} craigslist alternative for free posting ads for Housing, for sale, vehicles, mega personal classifieds, create your local sales network on adbacklist.`,
+      description: `${prefix} Skip The Games alternative for free escort ads, free personal ads, mega personal classified, hookers for sale on adbacklist local sales network`,
       keywords: `skip the games alternative,
 free escort ads,
 free personal ads,

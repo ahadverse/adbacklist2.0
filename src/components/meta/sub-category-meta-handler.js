@@ -30,20 +30,20 @@ const subCategoryMeta = (city, subCategory) => {
     },
 
     housing: {
-      title: `Rooms for Rent in ${prefix}  , free classified ads on Adbacklist.`,
-      description: `Descriptions- rooms for rent in ${prefix}  . Post free local classified ads for housing & find What you are looking for, or create your own ad for free on AdBacklist.`,
+      title: `${formattedsubCategory} in ${prefix}, free classified ads on Adbacklist`,
+      description: `${formattedsubCategory} in ${prefix}. Post free local classified ads for housing & find What you are looking for, or create your own ad for free on AdBacklist. `,
       keywords: ``,
     },
 
     community: {
-      title: `${formattedsubCategory}     Community Classifieds Ads in ${prefix}  , Adbacklist`,
-      description: `${formattedsubCategory}     community classifieds in ${prefix}  . Create your own ad posts for events, services & local groups only on Adbacklist.`,
+      title: `${formattedsubCategory} Community Classifieds Ads in ${prefix}  , Adbacklist`,
+      description: `${formattedsubCategory} community classifieds in ${prefix}  . Create your own ad posts for events, services & local groups only on Adbacklist.`,
       keywords: ``,
     },
 
     "for-sale": {
-      title: `For Sale in ${prefix}   – OfferUp Ads on Adbacklist`,
-      description: `For Sale in ${prefix}  , offerUp seattle tickets, cars, electronics, Auto Parts, furniture, clothes & more - create local sales network on Adbacklist`,
+      title: `${formattedsubCategory} For Sale in ${prefix} – OfferUp Ads on Adbacklist`,
+      description: `${formattedsubCategory} For Sale in ${prefix}, offerUp seattle tickets, cars, electronics, Auto Parts, furniture, clothes & more - create local sales network on Adbacklist`,
       keywords: ``,
     },
 
@@ -54,14 +54,14 @@ const subCategoryMeta = (city, subCategory) => {
     },
 
     services: {
-      title: `${prefix}   classified ads services – adbacklist`,
-      description: `${prefix}   ${formattedsubCategory}     classified ads services – Adbacklist helps you hire cleaners, Business, Automotive, Health-Beauty, Events & more –craigslist alternative`,
+      title: `${formattedsubCategory} inn ${prefix} classified ads services – adbacklist`,
+      description: `${formattedsubCategory} in ${prefix}  classified ads services – Adbacklist helps you hire cleaners, Business, Automotive, Health-Beauty, Events & more –craigslist alternative`,
       keywords: ``,
     },
 
     vehicles: {
-      title: `Vehicles for Sale in ${prefix}   – buy & sale on Adbacklist `,
-      description: `${formattedsubCategory}     vehicles for sale in ${prefix}   on Adbacklist. buy & sale cars, trucks, supreme automobiles, quality auto parts & more. create your local sales network`,
+      title: `${formattedsubCategory} for Sale in ${prefix} – buy & sale on Adbacklist `,
+      description: `${formattedsubCategory} for sale in ${prefix} on Adbacklist. buy & sale cars, trucks, supreme automobiles, quality auto parts & more. create your local sales network`,
       keywords: ``,
     },
   };

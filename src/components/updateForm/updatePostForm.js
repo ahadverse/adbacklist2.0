@@ -539,7 +539,7 @@ const UpdatePostForm = ({ post }) => {
           {/* If user needs to pay more and doesn't have enough, show buy link */}
           {delta > 0 && Number(users?.credit || 0) < delta ? (
             <Link
-              href={`/recharge-credits/${users?._id}`}
+              href={`/recharge-credits`}
               className='rounded bg-green-400 font-bold text-white p-2 hover:bg-red-400'
             >
               Buy Credits
