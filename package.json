@@ -2,6 +2,9 @@
   "name": "classified",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,8 +13,8 @@
   },
   "dependencies": {
     "@mantine/carousel": "8.3.6",
-    "@mantine/dropzone": "8.3.6",
     "@mantine/core": "8.3.6",
+    "@mantine/dropzone": "8.3.6",
     "@mantine/hooks": "8.3.6",
     "axios": "^1.6.7",
     "daisyui": "^4.7.0",
@@ -32,10 +35,10 @@
     "yet-another-react-lightbox": "^3.25.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.4.21",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
-    "postcss": "^8",
+    "postcss": "^8.5.6",
     "tailwindcss": "^3.3.0"
   }
 }
