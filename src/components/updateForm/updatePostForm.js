@@ -247,7 +247,7 @@ const UpdatePostForm = ({ post }) => {
 
     try {
       // update post
-      console.log(data);
+
       const res = await fetch(
         `https://adbacklist-backend2-0-vb3d.vercel.app/api/posts/post/${post._id}`,
         {
@@ -256,8 +256,7 @@ const UpdatePostForm = ({ post }) => {
           body: JSON.stringify(data),
         }
       );
-      console.log(res);
-      // Handle credit adjustment only if user exists
+
       if (users && session?.user?.id) {
         let newCredit = Number(users.credit || 0);
 
