@@ -29,6 +29,17 @@ const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 import "react-quill/dist/quill.snow.css";
 import { toast } from "react-toastify";
 
+const slugify = (str) => {
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/&/g, "-and-") // replace "&" with "-and-"
+    .replace(/\s+/g, "-") // spaces → "-"
+    .replace(/[^a-z0-9-]/g, "") // remove other invalid chars
+    .replace(/-+/g, "-") // collapse multiple "-"
+    .replace(/^-|-$/g, ""); // trim leading/trailing "-"
+};
+
 const formatCityName = (name) => {
   return name
     .split("-")
@@ -175,6 +186,8 @@ const PostForm = () => {
 
     data.posterId = session?.user?.id;
     data.cities = citiesModal;
+    data.category = slugify(state.category);
+    data.subCategory = slugify(state.subCategory);
 
     try {
       await fetch("https://adbacklist-backend2-0-vb3d.vercel.app/api/posts", {
@@ -185,8 +198,8 @@ const PostForm = () => {
 
       const newCredit = users?.credit - (local + premiumCost);
 
-      await axios.patch(
-        `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/${session?.user?.id}`,
+      await axios.put(
+        `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/credit/${session?.user?.id}`,
         {
           credit: newCredit?.toFixed(2),
         }

@@ -3,7 +3,14 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { Paper, TextInput, Button, Stack, Text } from "@mantine/core";
+import {
+  Paper,
+  TextInput,
+  Button,
+  Stack,
+  Text,
+  PasswordInput,
+} from "@mantine/core";
 import { Dropzone, IMAGE_MIME_TYPE } from "@mantine/dropzone";
 import { RiImageAddFill } from "react-icons/ri";
 
@@ -16,9 +23,9 @@ const Signup = () => {
     email: "",
     password: "",
     confirmPassword: "",
-    avatar: null,
+    avater: null,
   });
-  const [avatarPreview, setAvatarPreview] = useState(null);
+  const [avaterPreview, setAvatarPreview] = useState(null);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -32,7 +39,7 @@ const Signup = () => {
         toast.error("Avatar must be less than 100KB");
         return;
       }
-      setForm({ ...form, avatar: file });
+      setForm({ ...form, avater: file });
       setAvatarPreview(URL.createObjectURL(file));
     }
   };
@@ -48,23 +55,23 @@ const Signup = () => {
     setIsLoading(true);
 
     try {
-      let avatarUrl = "";
+      let avaterUrl = "";
 
-      // Upload avatar if selected
-      if (avatarPreview) {
-        const avatarForm = new FormData();
-        avatarForm.append("images", avatarPreview);
+      // Upload avater if selected
+      if (avaterPreview) {
+        const avaterForm = new FormData();
+        avaterForm.append("images", form?.avater);
 
         const uploadRes = await fetch(
           "https://adbacklist-backend2-0-vb3d.vercel.app/api/files2/files",
           {
             method: "POST",
-            body: avatarForm,
+            body: avaterForm,
           }
         );
 
         const uploadResult = await uploadRes.json();
-        avatarUrl = uploadResult[0]?.url || ""; // adjust based on your API response
+        avaterUrl = uploadResult?.[0] || ""; // adjust based on your API response
       }
 
       // Send user signup request
@@ -75,7 +82,8 @@ const Signup = () => {
           lastName: form.lastName,
           email: form.email,
           password: form.password,
-          avatar: avatarUrl,
+          avater: avaterUrl,
+          isManual: true,
         }
       );
 
@@ -145,7 +153,7 @@ const Signup = () => {
             />
 
             {/* Password */}
-            <TextInput
+            <PasswordInput
               placeholder='Password'
               type='password'
               name='password'
@@ -155,7 +163,7 @@ const Signup = () => {
               radius='md'
             />
 
-            <TextInput
+            <PasswordInput
               placeholder='Confirm Password'
               type='password'
               name='confirmPassword'
@@ -168,17 +176,17 @@ const Signup = () => {
             {/* Avatar Dropzone */}
             <div>
               {/* Avatar Preview with Remove Button */}
-              {avatarPreview ? (
+              {avaterPreview ? (
                 <div className='mt-3 relative w-24 h-24'>
                   <img
-                    src={avatarPreview}
+                    src={avaterPreview}
                     alt='Avatar Preview'
                     className='w-24 h-24 rounded-full object-cover shadow-md'
                   />
                   <button
                     type='button'
                     onClick={() => {
-                      setForm({ ...form, avatar: null });
+                      setForm({ ...form, avater: null });
                       setAvatarPreview(null);
                     }}
                     className='absolute top-0 right-0 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs'

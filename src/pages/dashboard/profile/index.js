@@ -3,9 +3,21 @@ import Layout from "@/components/shared/layout/layout";
 import DashboardNav from "@/components/shared/dashboardNav/nav";
 import { useMyContext } from "@/components/user";
 import { ImSpinner10 } from "react-icons/im";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 
 const Dashboards = () => {
   const { users, loading } = useMyContext();
+  const searchParams = useSearchParams();
+  const ref = searchParams.get("rld");
+
+  useEffect(() => {
+    if (ref) {
+      window.location.reload();
+    }
+  }, []);
+
   return (
     <div className='bg-gray-100'>
       <Head>
@@ -53,6 +65,20 @@ const Dashboards = () => {
                       {new Date(users?.createdAt).toDateString()}
                     </span>
                   </h1>
+                  <div className='flex items-center gap-6'>
+                    <Link
+                      className='mt-5 text-sm bg-red-600 text-white px-3 py-2'
+                      href={`/dashboard/profile/update/user-info`}
+                    >
+                      Update Profile
+                    </Link>
+                    <Link
+                      className='mt-5 text-sm bg-red-600 text-white px-3 py-2'
+                      href={`/dashboard/profile/update/password`}
+                    >
+                      Update Password
+                    </Link>
+                  </div>
                 </div>
               </div>
             )}

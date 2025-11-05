@@ -35,7 +35,7 @@ const Header = () => {
         </li>
       </>
     );
-  } else if (router.asPath === "/dashboard/recharge") {
+  } else if (router.asPath === "/recharge-credits") {
     ui = (
       <>
         <li className='list-none text-pink-700 font-bold px-2'>
@@ -66,7 +66,13 @@ const Header = () => {
   } else if (router.asPath == "/") {
     ui = (
       <>
-        <li className='list-none text-sm sm:text-base'>Meet & Fuck</li>{" "}
+        <Link
+          href={"https://skipchat.cam"}
+          target='_blank'
+          className='list-none text-sm sm:text-base'
+        >
+          Meet & Fuck
+        </Link>{" "}
         <div className='h-[20px] border border-gray-600 mx-3'></div>{" "}
         <Link href={"/add-post"} className='list-none text-sm sm:text-base'>
           Post Ad
@@ -76,7 +82,13 @@ const Header = () => {
   } else if (router.asPath == "/blogs") {
     ui = (
       <>
-        <li className='list-none text-sm sm:text-base'>Meet & Fuck</li>{" "}
+        <Link
+          href={"https://skipchat.cam"}
+          target='_blank'
+          className='list-none text-sm sm:text-base'
+        >
+          Meet & Fuck
+        </Link>{" "}
         <div className='h-[20px] border border-gray-600 mx-3'></div>{" "}
         <Link href={"/add-post"} className='list-none text-sm sm:text-base'>
           Post Ad
@@ -86,7 +98,13 @@ const Header = () => {
   } else if (router.asPath.includes("/blog")) {
     ui = (
       <>
-        <li className='list-none text-sm sm:text-base'>Meet & Fuck</li>{" "}
+        <Link
+          href={"https://skipchat.cam"}
+          target='_blank'
+          className='list-none text-sm sm:text-base'
+        >
+          Meet & Fuck
+        </Link>{" "}
         <div className='h-[20px] border border-gray-600 mx-3'></div>{" "}
         <Link href={"/add-post"} className='list-none text-sm sm:text-base'>
           Post Ad
@@ -96,7 +114,13 @@ const Header = () => {
   } else if (router.asPath.includes("/login")) {
     ui = (
       <>
-        <li className='list-none text-sm sm:text-base'>Meet & Fuck</li>{" "}
+        <Link
+          href={"https://skipchat.cam"}
+          target='_blank'
+          className='list-none text-sm sm:text-base'
+        >
+          Meet & Fuck
+        </Link>{" "}
         <div className='h-[20px] border border-gray-600 mx-3'></div>{" "}
         <Link href={"/add-post"} className='list-none text-sm sm:text-base'>
           Post Ad
@@ -151,7 +175,7 @@ const Header = () => {
         </Link>
       </>
     );
-  } else if (router.asPath !== "/") {
+  } else if (router.pathname !== "/") {
     ui = (
       <>
         <FaLocationDot className='text-pink-700' />

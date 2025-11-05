@@ -263,8 +263,8 @@ const UpdatePostForm = ({ post }) => {
         if (delta > 0) {
           // charge difference
           newCredit = Number((newCredit - delta).toFixed(2));
-          await axios.patch(
-            `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/${session.user.id}`,
+          await axios.put(
+            `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/credit/${session.user.id}`,
             { credit: newCredit.toFixed(2) }
           );
           setUser({ ...users, credit: newCredit });
@@ -272,8 +272,8 @@ const UpdatePostForm = ({ post }) => {
           // refund difference
           const refund = Math.abs(delta);
           newCredit = Number((newCredit + refund).toFixed(2));
-          await axios.patch(
-            `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/${session.user.id}`,
+          await axios.put(
+            `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/credit/${session.user.id}`,
             { credit: newCredit.toFixed(2) }
           );
           setUser({ ...users, credit: newCredit });
@@ -290,7 +290,7 @@ const UpdatePostForm = ({ post }) => {
       setLoading(false);
     }
   };
-  console.log(delta);
+
   return (
     <Paper
       radius='md'

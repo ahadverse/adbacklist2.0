@@ -170,8 +170,8 @@ const SinglePostForm = () => {
       const result = await res.json();
       const newCredit = users?.credit - premiumCost;
 
-      await axios.patch(
-        `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/${session?.user?.id}`,
+      await axios.put(
+        `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/credit/${session?.user?.id}`,
         {
           credit: newCredit?.toFixed(2),
         }

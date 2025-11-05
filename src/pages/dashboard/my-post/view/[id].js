@@ -13,8 +13,6 @@ const PostDetail = () => {
   const [postDetails, setPost] = useState();
   const [loading, setLoading] = useState(true);
 
-  console.log(router.query.id);
-
   useEffect(() => {
     setLoading(true);
     if (!router.query.id) {
