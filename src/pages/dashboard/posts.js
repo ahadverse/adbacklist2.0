@@ -36,8 +36,7 @@ const Dashboards = () => {
     } catch (error) {
       setLoading(false);
       setPost([]);
-      setPages(0);
-      setStartIndex(0);
+      setPage(0);
       console.error(error);
     }
   }
@@ -59,8 +58,11 @@ const Dashboards = () => {
     reload,
   ]);
 
-  const setPage = (e) => {
-    setCurrent(e);
+  const setPage = (page) => {
+    setPagination((prev) => ({
+      ...prev,
+      page,
+    }));
   };
 
   return (
