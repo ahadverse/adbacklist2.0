@@ -19,6 +19,18 @@ export default function Document() {
 
   gtag('config', 'G-RDFXEVQK54');`}
         </Script>
+        <Script type='application/ld+json'>
+          {`
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AdBackList",
+  "url": "https://adbacklist.com",
+  "logo": "https://adbacklist.com/logo.png",
+  "description": "AdBackList is a classified ads listing website where users can post and browse listings across multiple categories."
+}
+`}
+        </Script>
       </Head>
       <body>
         <Main />

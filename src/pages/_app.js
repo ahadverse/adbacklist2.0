@@ -20,12 +20,9 @@ export default function App({
   const [links, setLinks] = useState([]);
   async function getUser() {
     try {
-      const response = await axios.get(
-        `https://adbacklist-backend2-0-vb3d.vercel.app/api/header-ads`,
-        {
-          method: "GET",
-        }
-      );
+      const response = await axios.get(`http://localhost:5000/api/header-ads`, {
+        method: "GET",
+      });
       const data = response.data.response.links;
       setLinks(data);
     } catch (error) {

@@ -14,13 +14,13 @@ const Cities = () => {
               {a?.children?.map((b) => (
                 <div key={b._id}>
                   <br />
-                  <h1 className='font-bold m-auto text-pink-700   sm:w-8/12 px-3'>
+                  <h2 className='font-bold m-auto text-pink-700   sm:w-8/12 px-3'>
                     {b.name}
-                  </h1>
+                  </h2>
 
                   {b?.children?.map((c) => (
-                    <ul key={c._id} className='m-auto sm:w-8/12 px-3'>
-                      <li className='item underline mb-2 sm:mb-3'>
+                    <div key={c._id} className='m-auto sm:w-8/12 px-3'>
+                      <h3 className='item underline mb-2 sm:mb-3'>
                         <Link
                           href={`/categories/${c?.name
                             ?.toLowerCase()
@@ -29,8 +29,8 @@ const Cities = () => {
                         >
                           {c?.name}
                         </Link>
-                      </li>
-                    </ul>
+                      </h3>
+                    </div>
                   ))}
                 </div>
               ))}
@@ -45,13 +45,13 @@ const Cities = () => {
               {a?.children?.map((b) => (
                 <div key={b._id}>
                   <br />
-                  <h1 className='font-bold m-auto text-pink-700   sm:w-8/12 px-3'>
+                  <h4 className='font-bold m-auto text-pink-700   sm:w-8/12 px-3'>
                     {b.name}
-                  </h1>
+                  </h4>
 
                   {b?.children?.map((c) => (
-                    <ul key={c._id} className='m-auto sm:w-8/12 px-3'>
-                      <li className='item underline mb-2 sm:mb-3'>
+                    <div key={c._id} className='m-auto sm:w-8/12 px-3'>
+                      <h5 className='item underline mb-2 sm:mb-3'>
                         <Link
                           href={`/categories/${c?.name
                             ?.toLowerCase()
@@ -60,8 +60,8 @@ const Cities = () => {
                         >
                           {c?.name}
                         </Link>
-                      </li>
-                    </ul>
+                      </h5>
+                    </div>
                   ))}
                 </div>
               ))}

@@ -32,7 +32,7 @@ const Search = () => {
   return (
     <div>
       <div className='my-5 sm:w-[1000px] w-11/12 m-auto'>
-        <p className='font-bold'>Choose a location : </p>
+        <h6 className='font-bold'>Choose a location : </h6>
         <input
           placeholder='City Name (3 letters)'
           className='w-full p-2 bg-gray-50'

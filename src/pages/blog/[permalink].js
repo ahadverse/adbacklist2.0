@@ -17,7 +17,7 @@ const DetailsBlog = () => {
   async function getUser() {
     try {
       const response = await axios.get(
-        `https://adbacklist-backend2-0-vb3d.vercel.app/api/blogs/single?q=${id}`
+        `http://localhost:5000/api/blogs/single?q=${id}`
       );
 
       const data = response.data.data.blog;

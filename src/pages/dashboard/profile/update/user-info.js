@@ -37,19 +37,16 @@ const Dashboards = () => {
       const avaterForm = new FormData();
       avaterForm.append("images", profileData?.avater);
 
-      const uploadRes = await fetch(
-        "https://adbacklist-backend2-0-vb3d.vercel.app/api/files2/files",
-        {
-          method: "POST",
-          body: avaterForm,
-        }
-      );
+      const uploadRes = await fetch("http://localhost:5000/api/files2/files", {
+        method: "POST",
+        body: avaterForm,
+      });
 
       const uploadResult = await uploadRes.json();
       avaterUrl = uploadResult?.[0] || "";
     }
     const res = await axios.put(
-      `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/${users?._id}`,
+      `http://localhost:5000/api/users/${users?._id}`,
       {
         firstName: profileData.firstName,
         lastName: profileData.lastName,

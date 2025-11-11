@@ -22,15 +22,11 @@ const Category = () => {
   const router = useRouter();
   const category = categories.find((a) => a.slug === router.query.path);
 
-  console.log();
-
-  // Pick a color based on category index or default fallback
   const colorIndex = categories.findIndex((a) => a.slug === router.query.path);
   const color =
     categoryColors[colorIndex >= 0 ? colorIndex % categoryColors.length : 0];
 
   const { path, city } = router.query;
-
   const meta = categoryMeta(city, path)[path] || {};
 
   const formattedCity =
@@ -59,11 +55,16 @@ const Category = () => {
         <div className='py-6 bg-white xl:w-[1280px] lg:px-5 rounded lg:w-11/12 w-11/12 m-auto'>
           {category ? (
             <>
-              {/* Category Title */}
-              <h2
-                className={`${color} text-white text-2xl font-bold px-4 py-2 rounded-md mb-4`}
+              {/* Main Page Heading */}
+              <h1
+                className={`${color} text-white text-3xl font-bold px-4 py-2 rounded-md mb-6`}
               >
-                {category.name}
+                {category.name} {formattedCity ? `in ${formattedCity}` : ""}
+              </h1>
+
+              {/* Subcategories Section Heading */}
+              <h2 className='text-xl font-semibold mb-3'>
+                Explore {category.name} Subcategories
               </h2>
 
               {/* Subcategories Grid */}
@@ -80,18 +81,18 @@ const Category = () => {
                     ></div>
 
                     {/* Foreground content */}
-                    <span className='relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300'>
+                    <h3 className='relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300'>
                       {a.name}
-                    </span>
+                    </h3>
                     <IoIosArrowForward className='relative z-10 text-gray-500 group-hover:text-white transition-colors duration-300' />
                   </Link>
                 ))}
               </div>
             </>
           ) : (
-            <p className='text-center text-gray-600 py-10'>
+            <h4 className='text-center text-gray-600 py-10'>
               Category not found.
-            </p>
+            </h4>
           )}
         </div>
       </Layout>

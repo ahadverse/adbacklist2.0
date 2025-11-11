@@ -9,13 +9,9 @@ import { IoIosArrowForward } from "react-icons/io";
 
 import {
   FaHome,
-  FaTools,
-  FaLaptop,
   FaShoppingCart,
   FaCar,
-  FaUtensils,
   FaHeart,
-  FaCamera,
   FaChevronDown,
   FaChevronUp,
 } from "react-icons/fa";
@@ -42,7 +38,6 @@ const CategoryPage = ({ path }) => {
     }));
   };
 
-  // Pair categories like [1,5], [2,6], ...
   const pairCategories = (arr) => {
     const half = Math.ceil(arr.length / 2);
     const result = [];
@@ -56,7 +51,6 @@ const CategoryPage = ({ path }) => {
 
   const groupedCategories = pairCategories(categories);
 
-  // 8 colors and 8 icons
   const categoryColors = [
     "bg-red-400",
     "bg-blue-400",
@@ -79,11 +73,17 @@ const CategoryPage = ({ path }) => {
   ];
 
   return (
-    <div className='py-0 xl:w-[1280px]  lg:px-5 xl:px-0 lg:w-11/12 w-11/12 m-auto'>
-      <div className='bg-gray-200 text-black flex flex-wrap items-center'>
-        <p className='text-red-600 font-bold'>Nearest Cities: </p>
+    <div className='py-0 xl:w-[1280px] lg:px-5 xl:px-0 lg:w-11/12 w-11/12 m-auto'>
+      {/* Main Page Title */}
+      <h1 className='text-3xl font-bold my-4'>
+        {city ? `${city.name} Categories` : "All Categories"}
+      </h1>
+
+      {/* Nearest Cities */}
+      <section className='bg-gray-200 text-black flex flex-wrap items-center p-2 rounded-md'>
+        <h2 className='text-red-600 font-bold mr-2'>Nearest Cities:</h2>
         {filteredNearCities?.map((a) => (
-          <p className=' ml-2 underline' key={a.name}>
+          <h3 key={a.name} className='ml-2 underline'>
             <Link
               href={`/categories/${a?.name
                 ?.toLowerCase()
@@ -91,19 +91,20 @@ const CategoryPage = ({ path }) => {
             >
               {a?.name}
             </Link>
-          </p>
+          </h3>
         ))}
-      </div>
+      </section>
+
+      {/* Categories Grid */}
       <div className='grid md:grid-cols-2 py-3 grid-cols-1 lg:grid-cols-4 gap-6'>
         {groupedCategories.map((group, idx) => (
-          <div key={idx} className='grid grid-cols-1  h-fit gap-5'>
+          <div key={idx} className='grid grid-cols-1 h-fit gap-5'>
             {group.map((category) => {
               const isExpanded = expandedCategories[category.id] || false;
               const subcategories = isExpanded
                 ? category.subcategories
                 : category.subcategories.slice(0, 8);
 
-              // Cycle through 8 colors and icons
               const color = categoryColors[category.id % 8];
               const Icon = categoryIcons[category.id % 8];
 
@@ -114,11 +115,11 @@ const CategoryPage = ({ path }) => {
                 >
                   {/* Category Name */}
                   <div
-                    className={`${color} flex justify-between px-2 py-2 text-lg font-bold  items-center text-white`}
+                    className={`${color} flex justify-between px-2 py-2 text-lg font-bold items-center text-white`}
                   >
-                    <span className='flex   items-center  gap-2'>
-                      {Icon} {category.name}
-                    </span>
+                    <h3 className='flex items-center gap-2'>
+                      <Icon /> {category.name}
+                    </h3>
                     <Link
                       className='hover:bg-red-600 rounded-full p-1'
                       href={`/category/${category.slug}?city=${path?.city}`}
@@ -130,13 +131,16 @@ const CategoryPage = ({ path }) => {
                   {/* Subcategories */}
                   <ul className='space-y-2 relative p-2'>
                     {subcategories.map((sub) => (
-                      <Link
-                        href={`/posts/${category.slug}/${sub.slug}?city=${path?.city}`}
-                        key={sub.id}
-                        className={`text-black block hover:text-blue-600 cursor-pointer`}
-                      >
-                        {sub.name}
-                      </Link>
+                      <li key={sub.id}>
+                        <h4>
+                          <Link
+                            href={`/posts/${category.slug}/${sub.slug}?city=${path?.city}`}
+                            className='text-black block hover:text-blue-600 cursor-pointer'
+                          >
+                            {sub.name}
+                          </Link>
+                        </h4>
+                      </li>
                     ))}
 
                     {/* See More / See Less */}
@@ -146,7 +150,7 @@ const CategoryPage = ({ path }) => {
                         className={`${
                           isExpanded
                             ? ""
-                            : "absolute xl:mt-3 xl:py-2.5 lg:mt-1 lg:py-1.5 md:mt-1 md:py-1.5  mt-1 py-1.5"
+                            : "absolute xl:mt-3 xl:py-2.5 lg:mt-1 lg:py-1.5 md:mt-1 md:py-1.5 mt-1 py-1.5"
                         } bottom-0 w-full bg-[linear-gradient(180deg,rgba(255,255,255,0.8)_0%,#ffffff_100%)] text-center`}
                       >
                         <button

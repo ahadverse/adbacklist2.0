@@ -40,9 +40,9 @@ hookers for sale`,
     housing: {
       title: `${prefix} free Classifieds Ads for Housing, Rooms | Adbacklist`,
       description: `${prefix}   Free classified ads for Housing, cheap apartments, condos, room shares & rentals. What you are looking for, or create your own ad for free on adBacklist.`,
-      keywords: `rooms for rent in ${prefix},
-houses for sale in ${prefix},
-condos for sale in ${prefix},
+      keywords: `rooms for rent,
+houses for sale,
+condos for sale,
 condos on rent`,
     },
 

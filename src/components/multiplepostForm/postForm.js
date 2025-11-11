@@ -161,13 +161,10 @@ const PostForm = () => {
       images.forEach((img) => formData.append("images", img.file));
 
       try {
-        const res = await fetch(
-          "https://adbacklist-backend2-0-vb3d.vercel.app/api/files2/files",
-          {
-            method: "POST",
-            body: formData,
-          }
-        );
+        const res = await fetch("http://localhost:5000/api/files2/files", {
+          method: "POST",
+          body: formData,
+        });
         const result = await res.json();
         data.images = result;
       } catch (err) {
@@ -190,7 +187,7 @@ const PostForm = () => {
     data.subCategory = slugify(state.subCategory);
 
     try {
-      await fetch("https://adbacklist-backend2-0-vb3d.vercel.app/api/posts", {
+      await fetch("http://localhost:5000/api/posts", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(data),
@@ -199,7 +196,7 @@ const PostForm = () => {
       const newCredit = users?.credit - (local + premiumCost);
 
       await axios.put(
-        `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/credit/${session?.user?.id}`,
+        `http://localhost:5000/api/users/credit/${session?.user?.id}`,
         {
           credit: newCredit?.toFixed(2),
         }

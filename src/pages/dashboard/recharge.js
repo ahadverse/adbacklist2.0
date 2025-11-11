@@ -17,7 +17,7 @@ const Dashboards = () => {
     if (session?.user?.id) {
       try {
         const response = await axios.get(
-          `https://adbacklist-backend2-0-vb3d.vercel.app/api/transaction/${session?.user?.id}`,
+          `http://localhost:5000/api/transaction/${session?.user?.id}`,
           {
             method: "GET",
           }

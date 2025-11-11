@@ -42,10 +42,7 @@ const PostsList = ({
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(
-            `https://adbacklist-backend2-0-vb3d.vercel.app/api/posts/${id}`,
-            {}
-          )
+          .delete(`http://localhost:5000/api/posts/${id}`, {})
           .then((response) => {
             if (response.data.status == "success") {
               Swal.fire("Deleted!", "Your file has been deleted.", "success");

@@ -21,7 +21,7 @@ export const authOptions = {
       async authorize(credentials) {
         try {
           const res = await axios.post(
-            "https://adbacklist-backend2-0-vb3d.vercel.app/api/users/login",
+            "http://localhost:5000/api/users/login",
             {
               email: credentials.email,
               password: credentials.password,
@@ -54,7 +54,7 @@ export const authOptions = {
       if (profile) {
         try {
           const response = await axios.post(
-            "https://adbacklist-backend2-0-vb3d.vercel.app/api/users/save",
+            "http://localhost:5000/api/users/save",
             profile
           );
           user.id = response.data.isExist._id;

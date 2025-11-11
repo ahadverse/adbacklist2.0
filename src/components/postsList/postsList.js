@@ -34,7 +34,7 @@ const PostsList = ({ paths }) => {
           ? paths.category?.[0]
           : paths?.category?.[1];
       const endpoint = paths?.category?.length < 2 ? "all-category" : "all";
-      const url = `https://adbacklist-backend2-0-vb3d.vercel.app/api/posts/${endpoint}?page=${current}&category=${category}&state=${paths.city}&cat=${paths?.category?.[0]}`;
+      const url = `http://localhost:5000/api/posts/${endpoint}?page=${current}&category=${category}&state=${paths.city}&cat=${paths?.category?.[0]}`;
       const response = await axios.get(url);
 
       setPage(response.data.pages);
@@ -84,6 +84,7 @@ const PostsList = ({ paths }) => {
     const useOld = Cookies.get("age");
     setAge(useOld);
   }, [reload]);
+
   return (
     <div className=''>
       <div className='sm:w-9/12 m-auto gap-5 flex sm:justify-start justify-center   my-3'>

@@ -12,7 +12,7 @@ export const MyContextProvider = ({ children }) => {
   async function getUser() {
     try {
       const response = await axios.get(
-        `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/${session?.user?.id}`
+        `http://localhost:5000/api/users/${session?.user?.id}`
       );
       const data = response.data.data.user;
       setUser(data);

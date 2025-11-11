@@ -24,7 +24,7 @@ const Dashboards = () => {
   const [reload, setReload] = useState(1);
 
   async function getPosts() {
-    const uri = `https://adbacklist-backend2-0-vb3d.vercel.app/api/posts/posterid/${session?.user?.id}?page=${pagination?.page}&searchText=${searchText}&status=${status}&category=${category}&sort=${sort}`;
+    const uri = `http://localhost:5000/api/posts/posterid/${session?.user?.id}?page=${pagination?.page}&searchText=${searchText}&status=${status}&category=${category}&sort=${sort}`;
 
     try {
       const response = await axios.get(uri, {

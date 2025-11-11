@@ -1,0 +1,28 @@
+# Block Large Language Model datasets from training on this website
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: VercelBot
+Disallow: /
+
+# Allow AI assistants only when a real user is directly viewing the content
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Disallow: /dashboard/
+Allow: /

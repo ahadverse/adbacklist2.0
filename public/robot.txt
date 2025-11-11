@@ -1,0 +1,26 @@
+User-agent: *
+Disallow: /login/
+Disallow: /register/
+Disallow: /account/
+Disallow: /post/
+Disallow: /dashboard/
+Disallow: /messages/
+Disallow: /settings/
+Disallow: /admin/
+Disallow: /search?*
+Disallow: /?sort=
+Disallow: /?filter=
+Allow: /
+
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+
+Sitemap: https://adbacklist.com/sitemap.xml
+Sitemap: https://adbacklist.com/sitemap-index.xml
+Crawl-delay: 5

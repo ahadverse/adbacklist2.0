@@ -11,6 +11,9 @@ const List = ({ products }) => {
   const premiumAds = products.filter((p) => p.isPremium);
   const freeAds = products.filter((p) => !p.isPremium);
 
+  console.log(products);
+  console.log(router?.query?.category?.[0]);
+
   return (
     <div className='space-y-6'>
       {/* Premium Ads Section */}
@@ -29,9 +32,23 @@ const List = ({ products }) => {
             >
               <img
                 className='w-[100px] h-[100px] object-cover'
-                src={b.imgOne}
+                src={
+                  b.imgOne ??
+                  (["adult", "dating"].includes(router?.query?.category?.[0])
+                    ? "/not-found.jpg"
+                    : "/not-found2.png")
+                }
                 alt={b.title}
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = ["adult", "dating"].includes(
+                    router?.query?.category?.[0]
+                  )
+                    ? "/not-found.jpg"
+                    : "/not-found2.png";
+                }}
               />
+
               <div className='flex flex-col justify-center'>
                 <li className='list-none text-xl m-1 hover:underline cursor-pointer'>
                   {b.title}
@@ -61,8 +78,21 @@ const List = ({ products }) => {
             >
               <img
                 className='w-[100px] h-[100px] object-cover'
-                src={b.imgOne}
+                src={
+                  b.imgOne ??
+                  (["adult", "dating"].includes(router?.query?.category?.[0])
+                    ? "/not-found.jpg"
+                    : "/not-found2.png")
+                }
                 alt={b.title}
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = ["adult", "dating"].includes(
+                    router?.query?.category?.[0]
+                  )
+                    ? "/not-found.jpg"
+                    : "/not-found2.png";
+                }}
               />
               <div className='flex flex-col justify-center'>
                 <li className='list-none text-xl m-1 hover:underline cursor-pointer'>
