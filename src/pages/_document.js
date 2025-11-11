@@ -19,7 +19,7 @@ export default function Document() {
 
   gtag('config', 'G-RDFXEVQK54');`}
         </Script>
-        <Script type='application/ld+json'>
+        <Script id='schema' type='application/ld+json'>
           {`
 {
   "@context": "https://schema.org",
