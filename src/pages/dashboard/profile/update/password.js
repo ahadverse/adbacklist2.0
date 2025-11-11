@@ -28,7 +28,7 @@ const UpdatePassword = () => {
 
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/users/password/${users?._id}`,
+        `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/password/${users?._id}`,
         {
           password: passData.newPass,
           oldPassword: passData.current,

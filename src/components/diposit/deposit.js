@@ -52,7 +52,7 @@ const Deposit = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/transaction",
+        "https://adbacklist-backend2-0-vb3d.vercel.app/api/transaction",
         data
       );
       if (response.data.status === "success") {

@@ -37,11 +37,14 @@ export default function ReportUserPage() {
       reporterId: session?.user?.id,
     };
     try {
-      const res = await fetch("http://localhost:5000/api/reports", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(data),
-      });
+      const res = await fetch(
+        "https://adbacklist-backend2-0-vb3d.vercel.app/api/reports",
+        {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(data),
+        }
+      );
 
       if (res.status === 201) {
         toast.success("Report submitted successfully!");

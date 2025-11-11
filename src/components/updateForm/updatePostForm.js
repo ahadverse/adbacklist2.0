@@ -213,10 +213,13 @@ const UpdatePostForm = ({ post }) => {
       const formData = new FormData();
       images.forEach((img) => formData.append("images", img.file));
       try {
-        const res = await fetch("http://localhost:5000/api/files2/files", {
-          method: "POST",
-          body: formData,
-        });
+        const res = await fetch(
+          "https://adbacklist-backend2-0-vb3d.vercel.app/api/files2/files",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
         const result = await res.json();
         // append uploaded results to existingImages
         data.images = [...existingImages, ...result];
@@ -246,7 +249,7 @@ const UpdatePostForm = ({ post }) => {
       // update post
 
       const res = await fetch(
-        `http://localhost:5000/api/posts/post/${post._id}`,
+        `https://adbacklist-backend2-0-vb3d.vercel.app/api/posts/post/${post._id}`,
         {
           method: "PUT",
           headers: { "content-type": "application/json" },
@@ -261,7 +264,7 @@ const UpdatePostForm = ({ post }) => {
           // charge difference
           newCredit = Number((newCredit - delta).toFixed(2));
           await axios.put(
-            `http://localhost:5000/api/users/credit/${session.user.id}`,
+            `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/credit/${session.user.id}`,
             { credit: newCredit.toFixed(2) }
           );
           setUser({ ...users, credit: newCredit });
@@ -270,7 +273,7 @@ const UpdatePostForm = ({ post }) => {
           const refund = Math.abs(delta);
           newCredit = Number((newCredit + refund).toFixed(2));
           await axios.put(
-            `http://localhost:5000/api/users/credit/${session.user.id}`,
+            `https://adbacklist-backend2-0-vb3d.vercel.app/api/users/credit/${session.user.id}`,
             { credit: newCredit.toFixed(2) }
           );
           setUser({ ...users, credit: newCredit });

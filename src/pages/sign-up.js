@@ -63,7 +63,7 @@ const Signup = () => {
         avaterForm.append("images", form?.avater);
 
         const uploadRes = await fetch(
-          "http://localhost:5000/api/files2/files",
+          "https://adbacklist-backend2-0-vb3d.vercel.app/api/files2/files",
           {
             method: "POST",
             body: avaterForm,
@@ -75,14 +75,17 @@ const Signup = () => {
       }
 
       // Send user signup request
-      const res = await axios.post("http://localhost:5000/api/users", {
-        firstName: form.firstName,
-        lastName: form.lastName,
-        email: form.email,
-        password: form.password,
-        avater: avaterUrl,
-        isManual: true,
-      });
+      const res = await axios.post(
+        "https://adbacklist-backend2-0-vb3d.vercel.app/api/users",
+        {
+          firstName: form.firstName,
+          lastName: form.lastName,
+          email: form.email,
+          password: form.password,
+          avater: avaterUrl,
+          isManual: true,
+        }
+      );
 
       if (res.data.message === "success") {
         toast.success("Sign up successful! Please login.");

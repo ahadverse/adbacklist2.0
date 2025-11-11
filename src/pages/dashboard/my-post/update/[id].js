@@ -20,7 +20,9 @@ const PostDetail = () => {
       return;
     } else {
       axios
-        .get(`http://localhost:5000/api/posts/${router?.query?.id}`)
+        .get(
+          `https://adbacklist-backend2-0-vb3d.vercel.app/api/posts/${router?.query?.id}`
+        )
         .then((e) => {
           setPost(e.data.data.product[0]);
 
